@@ -19,24 +19,24 @@ Below are the instructions on how to use each script.
 
 Clone this repository to your local machine:
 
-\`\`\`bash
+```bash
 git clone https://github.com/jamesbachini/Bitcoin-Prediction-Model.git
 cd Bitcoin-Prediction-Model
-\`\`\`
+```
 
 Ensure you have the necessary Python packages installed. You can install the required packages using:
 
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ## Collecting Data
 
 To collect information from the exchange, use the \`data-logger.py\` script. This script fetches market data and saves it for further analysis.
 
-\`\`\`bash
+```bash
 python data-logger.py
-\`\`\`
+```
 
 This will create a data file that contains the latest Bitcoin market information collected from the following exchanges:
     - binance_spot - BTC/USDT
@@ -52,9 +52,9 @@ A sample file is provided at bitcoin_prices_2024_07_23.csv
 
 Once the data is collected, you can analyze it using the \`analysis.py\` script. This script processes the collected data and prepares it for model training. Change the name of the csv file in the script to match your recently collected data.
 
-\`\`\`bash
+```bash
 python analysis.py
-\`\`\`
+```
 
 ## Creating Models
 
@@ -62,17 +62,17 @@ python analysis.py
 
 To create a low time frame (LTF) model, use the \`ltf-model.py\` script. This script trains a model on short time frame data. Again change the csv filename to match your recently collected data.
 
-\`\`\`bash
+```bash
 python ltf-model.py
-\`\`\`
+```
 
 ### High Time Frame Model
 
 To create a high time frame (HTF) model, use the \`htf-model.py\` script. This script trains a model on longer time frame data. Again change the csv filename to match your recently collected data.
 
-\`\`\`bash
+```bash
 python htf-model.py
-\`\`\`
+```
 
 ## Making Predictions
 
@@ -80,25 +80,25 @@ python htf-model.py
 
 To get Bitcoin price predictions using the low time frame model, run the \`ltf-predictions.py\` script.
 
-\`\`\`bash
+```bash
 python ltf-predictions.py
-\`\`\`
+```
 
 ### High Time Frame Predictions
 
 To get Bitcoin price predictions using the high time frame model, run the \`htf-predictions.py\` script.
 
-\`\`\`bash
+```bash
 python htf-predictions.py
-\`\`\`
+```
 
 ## Simulating Trading
 
 You can simulate a trading situation and check profitability against live data using the \`mock-trading.py\` script. Note that this simulation does not take into account execution costs such as trading fees and slippage.
 
-\`\`\`bash
+```bash
 python mock-trading.py
-\`\`\`
+```
 
 ## More Information
 
