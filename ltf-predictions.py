@@ -34,7 +34,7 @@ model = load_model('bitcoin_ltf_model.keras')
 
 # Load the scaler used during model training
 scaler = MinMaxScaler()
-data_sample = pd.read_csv('bitcoin_prices_22a.csv')  # Load sample data to fit the scaler
+data_sample = pd.read_csv('bitcoin_prices_2024_07_23.csv')  # Load sample data to fit the scaler
 scaler.fit(data_sample.iloc[:, 1:])
 
 # Function to fetch order book metrics

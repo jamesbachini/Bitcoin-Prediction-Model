@@ -12,7 +12,7 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 # Load the data
-data = pd.read_csv('bitcoin_prices_22a.csv')
+data = pd.read_csv('bitcoin_prices_2024_07_23.csv')
 
 # Generate TA data
 #data['SMA'] = ta.trend.sma_indicator(data['binance_spot Price'], window=12)
