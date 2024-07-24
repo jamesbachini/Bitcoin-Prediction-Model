@@ -3,6 +3,8 @@
 
 This repository contains scripts and machine learning models for predicting Bitcoin prices using Keras and Tensorflow.
 
+The full tutorial for this script is available here: https://jamesbachini.com/chatgpt-keras-bitcoin-bot/
+
 Below are the instructions on how to use each script.
 
 ## Table of Contents
